@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.game {
+	width: 500px;
+}
+
+.canvas {
+	width: 100vw;
+	height: 100vh;
+	background-color: #151515;
+	position: relative;
+}
+
+#kamu {
+	position: absolute;
+	height: 5vh;
+	width: 5vw;
+	background-color: blue;
+}
+
+.bom {
+	height: 5vh;
+	width: 5vw;
+	background-color: #EB0000;
+	border-radius: 50%;
+	position: absolute;
+}
+
+#tombolNavigasi {
+	display: none;
+}
+
+.tombol button {
+	margin: 10px;
+	margin-right: 70px;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+
+#makanan {
+	height: 5vh;
+	width: 5vw;
+	background-color: #56FF00;
+	border-radius: 50%;
+	position: absolute;
+	animation: kedip 1s linear infinite;
+}
+
+#wm, #skor {
+	color: #eee;
+	opacity: 0.5;
+	position: absolute;
+}
+
+.kotak {
+	position: absolute;
+	width: 500px;
+	height: 10px;
+	background-color: rgba(255,255,255,0.1);
+}
+
+.kotakVer {
+	position: absolute;
+	width: 10px;
+	height: 500px;
+	background-color: rgba(255,255,255,0.1);
+}
+
+/* animasi */
+@keyframes kedip {
+	50% {
+		opacity: 0.3;
+		box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+	}
+}
